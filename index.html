@@ -42,6 +42,7 @@
             if(userGuess == computerGuess) {
                 wins++;
                 guessesLeft = 9;
+                guessesMadeText.textContent = "";
                 computerGuess = alphabet[Math.floor(Math.random() * alphabet.length)];
                 //for cheating
                 console.log(computerGuess);
@@ -53,6 +54,7 @@
             if(guessesLeft == 0) {
                 losses++;
                 guessesLeft = 9;
+                guessesMadeText.textContent = "";
                 computerGuess = alphabet[Math.floor(Math.random() * alphabet.length)];
                 //for cheating
                 console.log(computerGuess);
